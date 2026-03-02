@@ -1,3 +1,0 @@
-# Cloudflare Pages - project name for wrangler pages deploy
-name = "personal-dev-site"
-pages_build_output_dir = "./public"

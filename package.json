@@ -2,7 +2,7 @@
   "name": "personal-dev-site",
   "private": true,
   "scripts": {
-    "deploy": "wrangler pages deploy public"
+    "deploy": "npx wrangler pages deploy public --project-name=personal-dev-site"
   },
   "devDependencies": {
     "wrangler": "^4"
