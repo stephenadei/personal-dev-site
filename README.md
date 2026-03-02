@@ -50,6 +50,7 @@ Output goes to `public/`. Deploy to Cloudflare Pages, Netlify, Vercel, or any st
 3. **Build settings**:
    - Build command: `hugo`
    - Build output directory: `public`
+   - Deploy command: `npm run deploy` (or `npx wrangler pages deploy public`)
    - Environment variables:
      - `HUGO_VERSION` = `0.157.0` (or latest)
      - `HUGO_ENV` = `production`

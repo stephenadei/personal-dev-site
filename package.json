@@ -1,0 +1,10 @@
+{
+  "name": "personal-dev-site",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler pages deploy public"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}
