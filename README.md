@@ -58,3 +58,5 @@ Output goes to `public/`. Deploy to Cloudflare Pages, Netlify, Vercel, or any st
 4. **Custom domain**: Pages → Your project → Custom domains → Set up custom domain → `dev.stephenadei.nl`
 
 5. If `stephenadei.nl` is already on Cloudflare, Cloudflare will add the DNS record automatically. Otherwise add a CNAME: `dev` → `your-project.pages.dev`
+
+To trigger a redeploy after changing build settings, push a commit or use Retry deployment in the dashboard.
