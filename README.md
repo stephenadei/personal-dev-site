@@ -27,7 +27,8 @@ personal-dev-site/
 - **About page**: `content/about.md`
 - **Blog posts**: Add `.md` files to `content/posts/`
 - **Projects**: Edit `content/projects.md` or add project list
-- **Avatar**: Replace `static/images/avatar.jpg` with your photo
+- **Avatar**: Replace `static/images/avatar.png` with your photo
+- **Diagrams**: Follow workspace [docs/development/DIAGRAM_AND_IMAGING_HOUSE_STYLE.md](../../docs/development/DIAGRAM_AND_IMAGING_HOUSE_STYLE.md)
 
 ## Build for Production
 
@@ -37,26 +38,16 @@ hugo
 
 Output goes to `public/`. Deploy to Cloudflare Pages, Netlify, Vercel, or any static host.
 
-## Deploy to Cloudflare Pages (dev.stephenadei.nl)
+## Deploy via Docker + Cloudflare DNS (dev.stephenadei.nl)
 
-1. **Push to GitHub** (if not already):
-   ```bash
-   git remote add origin git@github.com:stephenadei/personal-dev-site.git
-   git push -u origin main
-   ```
+Self-hosted via Docker Compose, with Cloudflare DNS pointing to your server.
 
-2. **Cloudflare Dashboard** → Pages → Create project → Connect to Git
+```bash
+cd /home/stephen/projects/personal-dev-site
+docker compose up -d --build
+```
 
-3. **Build settings**:
-   - Build command: `hugo`
-   - Build output directory: `public`
-   - Deploy command: `npm run deploy` (or `npx wrangler pages deploy public`)
-   - Environment variables:
-     - `HUGO_VERSION` = `0.157.0` (or latest)
-     - `HUGO_ENV` = `production`
-
-4. **Custom domain**: Pages → Your project → Custom domains → Set up custom domain → `dev.stephenadei.nl`
-
-5. If `stephenadei.nl` is already on Cloudflare, Cloudflare will add the DNS record automatically. Otherwise add a CNAME: `dev` → `your-project.pages.dev`
-
-To trigger a redeploy after changing build settings, push a commit or use Retry deployment in the dashboard.
+Zie `infrastructure/DEV_STEPHENADEI_DOMAIN.md` voor:
+- DNS (A-record `dev` → VPS-IP, Cloudflare proxy aan)
+- Nginx reverse proxy config
+- SSL (automatisch via Cloudflare)
