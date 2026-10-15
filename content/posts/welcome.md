@@ -1,19 +1,18 @@
 +++
-title = "Welcome to My Dev Site"
-description = "First post on my new Hugo Coder site"
+title = "Welcome"
+description = "First post — dev site is live"
 date = "2025-03-02"
 draft = false
-tags = ["hugo", "meta"]
+tags = ["meta", "launch"]
 categories = ["general"]
 +++
 
-Welcome! This is the first post on my personal developer site, built with [Hugo](https://gohugo.io) and the [Coder theme](https://github.com/luizdepra/hugo-coder).
+This site is live at [dev.stephenadei.nl](https://dev.stephenadei.nl). Built with [Hugo](https://gohugo.io) and the [Coder theme](https://github.com/luizdepra/hugo-coder).
 
-The Coder theme is a minimalist, responsive theme perfect for developers—with support for:
+You'll find:
 
-- **Light/dark mode** — Toggle or auto-detect from system preference
-- **Syntax highlighting** — For code blocks in posts
-- **Blog & Projects** — Easy content organization
-- **Social links** — GitHub, LinkedIn, Twitter, and more
+- **About** — who I am, what I do, and the stack
+- **Projects** — data platform, Privélessen systems, UvA modules, and more
+- **Contact** — email, LinkedIn, GitHub
 
-More posts coming soon. Stay tuned!
+More posts on data engineering, statistics, and building things — coming soon.

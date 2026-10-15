@@ -1,0 +1,7 @@
+.git
+.gitignore
+node_modules
+public
+resources
+*.log
+scripts/deploy-debug.js
