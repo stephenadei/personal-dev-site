@@ -1,0 +1,57 @@
+/* Custom styles for dev.stephenadei.nl */
+.home-extensions {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.home-tagline {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-bottom: 0.75rem;
+}
+
+.home-quicklinks {
+  font-size: 0.9rem;
+}
+
+.home-quicklinks a {
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.home-quicklinks a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.home-quicklinks span {
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+
+/* About page: tab and table polish */
+.tabs .tab-label {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.tabs .tab-label:hover {
+  opacity: 0.85;
+}
+
+.page article table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.page article table th,
+.page article table td {
+  padding: 0.5rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid currentColor;
+  opacity: 0.9;
+}
+
+.page article table th {
+  font-weight: 600;
+}
