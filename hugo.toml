@@ -19,6 +19,7 @@ unsafe = true
 [params]
 author = "Stephen Adei"
 description = "Stephen Adei's personal developer website"
+images = ["images/og-default.png"]
 keywords = "blog,developer,personal"
 info = ["Software Engineer", "Full Stack Developer"]
 avatarURL = "images/avatar.jpg"
